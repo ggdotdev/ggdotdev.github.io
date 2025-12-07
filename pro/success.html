@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to gg Pro!</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            max-width: 600px;
+            margin: 60px auto;
+            padding: 20px;
+            text-align: center;
+            line-height: 1.6;
+        }
+        h1 { color: #2ecc71; font-size: 2.5em; margin-bottom: 0.2em; }
+        .checkmark { font-size: 4em; color: #2ecc71; margin: 20px 0; }
+        .license-box {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
+        }
+        .license-key {
+            font-family: monospace;
+            font-size: 1.1em;
+            background: #fff;
+            padding: 10px;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            word-break: break-all;
+        }
+        .next-steps {
+            text-align: left;
+            margin: 30px 0;
+        }
+        .next-steps li { margin: 10px 0; }
+        a { color: #6772e5; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .footer { margin-top: 40px; font-size: 0.9em; color: #6c757d; }
+        pre {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 4px;
+            text-align: left;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="checkmark">&#10003;</div>
+    <h1>Welcome to gg Pro!</h1>
+    <p>Your subscription is active. Check your email for your license key.</p>
+
+    <div class="license-box">
+        <h3>Your Pro License Key</h3>
+        <p>A license key starting with <code>gg_pro_cus_</code> has been sent to your email.</p>
+        <p><strong>Keep this key safe!</strong> You'll need it to activate gg Pro.</p>
+    </div>
+
+    <div class="next-steps">
+        <h3>Next Steps:</h3>
+        <ol>
+            <li><strong>Check your email</strong> for the license key (check spam if needed)</li>
+            <li><strong>Install gg</strong> if you haven't already:
+                <pre>curl -L gg.sh | sh</pre>
+            </li>
+            <li><strong>Run configuration</strong>:
+                <pre>gg config init</pre>
+                Enter your Claude API key and paste your Pro license key when prompted
+            </li>
+            <li><strong>Start shipping code</strong>:
+                <pre>gg ask "Add user authentication" --pro</pre>
+            </li>
+        </ol>
+    </div>
+
+    <p><a href="https://github.com/ggdotdev/gg">View gg documentation &rarr;</a></p>
+
+    <div class="footer">
+        <p>Questions? Email support@ggdotdev.com</p>
+        <p><a href="/pro">&larr; Back to Pro page</a></p>
+    </div>
+</body>
+</html>
